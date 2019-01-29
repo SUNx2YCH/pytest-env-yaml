@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='pytest-env-yaml',
-    version='0.1.1',
+    version='0.1.2',
     packages=find_packages(exclude=('tests',)),
     entry_points={
         'pytest11': [
