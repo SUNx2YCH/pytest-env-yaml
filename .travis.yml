@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements.txt
+script:
+  - pytest
+deploy:
+  provider: pypi
+  user: sunx2ych
+  password:
+    secure: 3/iigcbqyYWGUoNrg81A5VyIPfpd9O87+CKUrEbEMKKusbjsqukzC3N+JHyD2RVwZDEukv037sQ20j0FeuygH21lgZXaqEv36ybkVr5/PeDrXnJAWqb8Q35Z1JRTBGKgkabdGoTD0SU8cyo0zfUy/KS75JIxot8Rz33jXREwe6TAw8/1APkxPbMA7Hf9ZMJawlT7F5+pI3rTuShNnxSQOzo4rkD+5/ys1T/5CZDS/VXt2QrvfmAz78xs71tmGUjIP52Hq/VNgzliPamho3jmU6NJtAzbBeJjM2mrFwBy1afcy31xL4PICxflvy3VYrQzjux0ZbIUJAIJs4TSTz28AvOyudRaHbYDAeyOyvx13ydecqp8euvZaFDcdRt2RSqhyZly5TYOwD7qUJMKNMjOJHY4ayd5cvxiXCthohi32XVwNhKaLcjHCHQoAbiSYu18moNZ52ymfL9y933yOwTXzsxjpIvnvijzbfTj+Gl3VO60G7189ooFVTa534ZC1tYOAxP6SNEYyLKjYLVxBd+ZQuQiUX6sWzU6NbGXBTVrY5Wgtlk5quMPDaPfipSKiMrAPgU3hQ4+FgIVcAGpNjbP+c9FKbo6L8SFIcKiehY2d3MpHns3st0DSRNb2clrP8klJa3yKy2QUwHLJg+lvGNCvsIRkZ1b+gtwBlW/DsobW+0=
+  on:
+    tags: true
